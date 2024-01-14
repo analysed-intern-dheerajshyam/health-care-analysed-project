@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		300668642B53ED270012E171 /* OnboardingScreenPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300668632B53ED270012E171 /* OnboardingScreenPage.swift */; };
+		300668662B54105D0012E171 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300668652B54105D0012E171 /* LoginPage.swift */; };
 		30F586462B4FA56A002AC0D2 /* Analysed_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F586452B4FA56A002AC0D2 /* Analysed_ProjectApp.swift */; };
 		30F586482B4FA56A002AC0D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F586472B4FA56A002AC0D2 /* ContentView.swift */; };
 		30F5864A2B4FA56B002AC0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F586492B4FA56B002AC0D2 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		300668632B53ED270012E171 /* OnboardingScreenPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenPage.swift; sourceTree = "<group>"; };
+		300668652B54105D0012E171 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		30F586422B4FA56A002AC0D2 /* Analysed Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Analysed Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F586452B4FA56A002AC0D2 /* Analysed_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analysed_ProjectApp.swift; sourceTree = "<group>"; };
 		30F586472B4FA56A002AC0D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				30F586552B4FA815002AC0D2 /* Dependencies.swift */,
 				30F586532B4FA653002AC0D2 /* HomePage.swift */,
+				300668652B54105D0012E171 /* LoginPage.swift */,
 				300668632B53ED270012E171 /* OnboardingScreenPage.swift */,
 				30F586472B4FA56A002AC0D2 /* ContentView.swift */,
 				30F586452B4FA56A002AC0D2 /* Analysed_ProjectApp.swift */,
@@ -150,6 +153,7 @@
 				30F586482B4FA56A002AC0D2 /* ContentView.swift in Sources */,
 				300668642B53ED270012E171 /* OnboardingScreenPage.swift in Sources */,
 				30F586542B4FA653002AC0D2 /* HomePage.swift in Sources */,
+				300668662B54105D0012E171 /* LoginPage.swift in Sources */,
 				30F586462B4FA56A002AC0D2 /* Analysed_ProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
