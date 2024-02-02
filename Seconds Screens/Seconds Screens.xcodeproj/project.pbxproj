@@ -17,6 +17,7 @@
 		303AC9262B5FF2540052E5F1 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AC9252B5FF2540052E5F1 /* ResetPasswordView.swift */; };
 		303AC9282B5FF4810052E5F1 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AC9272B5FF4810052E5F1 /* ForgotPasswordView.swift */; };
 		303AC92A2B5FF5310052E5F1 /* EnterCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AC9292B5FF5310052E5F1 /* EnterCodeView.swift */; };
+		307D5F552B6D39F500CFD0CD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D5F542B6D39F500CFD0CD /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		303AC9252B5FF2540052E5F1 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		303AC9272B5FF4810052E5F1 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		303AC9292B5FF5310052E5F1 /* EnterCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCodeView.swift; sourceTree = "<group>"; };
+		307D5F542B6D39F500CFD0CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				303AC9212B5FDA8E0052E5F1 /* Dependencies.swift */,
+				307D5F542B6D39F500CFD0CD /* HomeView.swift */,
 				303AC9292B5FF5310052E5F1 /* EnterCodeView.swift */,
 				303AC9252B5FF2540052E5F1 /* ResetPasswordView.swift */,
 				303AC9272B5FF4810052E5F1 /* ForgotPasswordView.swift */,
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				307D5F552B6D39F500CFD0CD /* HomeView.swift in Sources */,
 				303AC9222B5FDA8E0052E5F1 /* Dependencies.swift in Sources */,
 				303AC9282B5FF4810052E5F1 /* ForgotPasswordView.swift in Sources */,
 				303AC92A2B5FF5310052E5F1 /* EnterCodeView.swift in Sources */,
