@@ -180,12 +180,10 @@ struct CaloriesView: View {
     var body: some View {
         GeometryReader { geo in
             VStack {
-                HStack {
-                    Text("Calories")
-                        .foregroundStyle(Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!))
-                        .font(.system(size: 40))
-                        .padding(.top, 15)
-                }
+                Text("Calories")
+                    .foregroundStyle(Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!))
+                    .font(.system(size: 40))
+                    .padding(.top, 15)
                 
                 CaloriesProgressCircle(
                     color: Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!),
