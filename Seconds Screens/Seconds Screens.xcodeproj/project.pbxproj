@@ -19,6 +19,7 @@
 		303AC92A2B5FF5310052E5F1 /* EnterCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AC9292B5FF5310052E5F1 /* EnterCodeView.swift */; };
 		305983D32B6E07790007501C /* cabin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 305983D22B6E074D0007501C /* cabin.ttf */; };
 		305983D42B6E077C0007501C /* cabin_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 305983D12B6E07440007501C /* cabin_italic.ttf */; };
+		305983D72B6E0B230007501C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305983D62B6E0B230007501C /* ProfileView.swift */; };
 		307D5F552B6D39F500CFD0CD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D5F542B6D39F500CFD0CD /* HomeView.swift */; };
 		307D5F572B6DF2F300CFD0CD /* CaloriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D5F562B6DF2F300CFD0CD /* CaloriesView.swift */; };
 		307D5F592B6E046700CFD0CD /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D5F582B6E046700CFD0CD /* MessagesView.swift */; };
@@ -39,6 +40,7 @@
 		305983D12B6E07440007501C /* cabin_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cabin_italic.ttf; sourceTree = "<group>"; };
 		305983D22B6E074D0007501C /* cabin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cabin.ttf; sourceTree = "<group>"; };
 		305983D52B6E07B40007501C /* Seconds-Screens-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Seconds-Screens-Info.plist"; sourceTree = SOURCE_ROOT; };
+		305983D62B6E0B230007501C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		307D5F542B6D39F500CFD0CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		307D5F562B6DF2F300CFD0CD /* CaloriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesView.swift; sourceTree = "<group>"; };
 		307D5F582B6E046700CFD0CD /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				305983D52B6E07B40007501C /* Seconds-Screens-Info.plist */,
 				303AC9212B5FDA8E0052E5F1 /* Dependencies.swift */,
+				305983D62B6E0B230007501C /* ProfileView.swift */,
 				307D5F582B6E046700CFD0CD /* MessagesView.swift */,
 				307D5F562B6DF2F300CFD0CD /* CaloriesView.swift */,
 				307D5F542B6D39F500CFD0CD /* HomeView.swift */,
@@ -178,6 +181,7 @@
 				307D5F552B6D39F500CFD0CD /* HomeView.swift in Sources */,
 				303AC9222B5FDA8E0052E5F1 /* Dependencies.swift in Sources */,
 				303AC9282B5FF4810052E5F1 /* ForgotPasswordView.swift in Sources */,
+				305983D72B6E0B230007501C /* ProfileView.swift in Sources */,
 				303AC92A2B5FF5310052E5F1 /* EnterCodeView.swift in Sources */,
 				303AC9242B5FECFC0052E5F1 /* RegisterView.swift in Sources */,
 				303AC9202B5FD99C0052E5F1 /* SignInView.swift in Sources */,
