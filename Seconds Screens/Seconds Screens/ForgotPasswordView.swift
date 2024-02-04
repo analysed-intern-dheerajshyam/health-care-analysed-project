@@ -51,7 +51,7 @@ struct ForgotPasswordView: View {
                 Text("Forgot Password")
                     .bold()
                     .foregroundStyle(Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!))
-                    .font(.system(size: 35))
+                    .font(.custom("cabin", size: 35))
                     .padding(.top, 80)
                 
                 ForgotPasswordFields()
