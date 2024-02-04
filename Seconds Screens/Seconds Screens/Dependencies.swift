@@ -16,3 +16,9 @@ struct Meal {
     let name: String
     let details: [String]
 }
+
+struct WorkoutResult {
+    let title: String
+    let count: String
+    let unit: String
+}

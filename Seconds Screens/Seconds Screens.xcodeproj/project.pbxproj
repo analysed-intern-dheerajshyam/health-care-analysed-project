@@ -18,6 +18,7 @@
 		303AC9282B5FF4810052E5F1 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AC9272B5FF4810052E5F1 /* ForgotPasswordView.swift */; };
 		303AC92A2B5FF5310052E5F1 /* EnterCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AC9292B5FF5310052E5F1 /* EnterCodeView.swift */; };
 		30574D542B6F26C5006983D6 /* PickWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30574D532B6F26C5006983D6 /* PickWorkoutView.swift */; };
+		30574D562B6F3056006983D6 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30574D552B6F3056006983D6 /* ResultsView.swift */; };
 		305983D32B6E07790007501C /* cabin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 305983D22B6E074D0007501C /* cabin.ttf */; };
 		305983D42B6E077C0007501C /* cabin_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 305983D12B6E07440007501C /* cabin_italic.ttf */; };
 		305983D72B6E0B230007501C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305983D62B6E0B230007501C /* ProfileView.swift */; };
@@ -40,6 +41,7 @@
 		303AC9272B5FF4810052E5F1 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		303AC9292B5FF5310052E5F1 /* EnterCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCodeView.swift; sourceTree = "<group>"; };
 		30574D532B6F26C5006983D6 /* PickWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickWorkoutView.swift; sourceTree = "<group>"; };
+		30574D552B6F3056006983D6 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		305983D12B6E07440007501C /* cabin_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cabin_italic.ttf; sourceTree = "<group>"; };
 		305983D22B6E074D0007501C /* cabin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cabin.ttf; sourceTree = "<group>"; };
 		305983D52B6E07B40007501C /* Seconds-Screens-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Seconds-Screens-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				305983D52B6E07B40007501C /* Seconds-Screens-Info.plist */,
+				30574D552B6F3056006983D6 /* ResultsView.swift */,
 				303AC9212B5FDA8E0052E5F1 /* Dependencies.swift */,
 				30574D532B6F26C5006983D6 /* PickWorkoutView.swift */,
 				305983D82B6E14940007501C /* UserDetailsView.swift */,
@@ -196,6 +199,7 @@
 				307D5F592B6E046700CFD0CD /* MessagesView.swift in Sources */,
 				303AC9262B5FF2540052E5F1 /* ResetPasswordView.swift in Sources */,
 				303AC9142B5FD9440052E5F1 /* ContentView.swift in Sources */,
+				30574D562B6F3056006983D6 /* ResultsView.swift in Sources */,
 				303AC9122B5FD9440052E5F1 /* Seconds_ScreensApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
