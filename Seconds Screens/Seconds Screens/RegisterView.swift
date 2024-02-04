@@ -5,7 +5,12 @@ struct SignUpFields : View {
     @State var name:String = ""
     @State var email:String = ""
     @State var contact_number:String = ""
-    @State var dob:String = ""
+    
+    @State var showDOB:Bool = false
+    @State var calendarID: Int = 0
+    @State var dob:Date = Date()
+    @State var dobStr:String = ""
+    
     @State var referral_code:String = ""
     @State var password:String = ""
     @State var re_password:String = ""
@@ -17,95 +22,99 @@ struct SignUpFields : View {
             Name field.
          */
         
-        TextField("", text: self.$name)
-            .frame(width: 350, height: 50)
-            .background {
-                RoundedRectangle(cornerRadius: 40)
-                    .fill(
-                        Color(red: 0.63, green: 0.63, blue: 0.63).opacity(0.29)
-                    ).frame(width: 350, height: 50)
-                    .overlay {
-                        if(self.name.isEmpty) {
-                            HStack {
-                                Text("Name")
-                                    .foregroundStyle(
-                                        Color(uiColor: UIColor(hex: "939393", alpha: 1.0)!)
-                                    ).bold()
-                                Spacer()
-                            }.padding(.leading)
-                        }
-                    }
-            }.padding(.top, 15)
+
+        TextField(text: self.$name) {
+            Text("Name")
+                .foregroundStyle(
+                    Color(uiColor: UIColor(hex: "939393", alpha: 1.0)!)
+                ).bold()
+        }.frame(width: 350, height: 50)
+        .padding(.leading, 21)
+        .background {
+            RoundedRectangle(cornerRadius: 40)
+                .fill(
+                    Color(red: 0.63, green: 0.63, blue: 0.63).opacity(0.29)
+                ).frame(width: 350, height: 50)
+        }.padding(.top, 15)
+        .foregroundStyle(.white)
         
         /*
            Email field.
          */
         
-        TextField("", text: self.$email)
-            .frame(width: 350, height: 50)
-            .background {
-                RoundedRectangle(cornerRadius: 40)
-                    .fill(
-                        Color(red: 0.63, green: 0.63, blue: 0.63).opacity(0.29)
-                    ).frame(width: 350, height: 50)
-                    .overlay {
-                        if(self.email.isEmpty) {
-                            HStack {
-                                Text("Email")
-                                    .foregroundStyle(
-                                        Color(uiColor: UIColor(hex: "939393", alpha: 1.0)!)
-                                    ).bold()
-                                Spacer()
-                            }.padding(.leading)
-                        }
-                    }
-            }.padding(.top, 15)
+        TextField(text: self.$email) {
+            Text("Email")
+                .foregroundStyle(
+                    Color(uiColor: UIColor(hex: "939393", alpha: 1.0)!)
+                ).bold()
+        }.frame(width: 350, height: 50)
+        .padding(.leading, 21)
+        .background {
+            RoundedRectangle(cornerRadius: 40)
+                .fill(
+                    Color(red: 0.63, green: 0.63, blue: 0.63).opacity(0.29)
+                ).frame(width: 350, height: 50)
+        }.padding(.top, 15)
+        .foregroundStyle(.white)
         
         /*
             Contact number field
          */
         
-        TextField("", text: self.$contact_number)
-            .frame(width: 350, height: 50)
-            .background {
-                RoundedRectangle(cornerRadius: 40)
-                    .fill(
-                        Color(red: 0.63, green: 0.63, blue: 0.63).opacity(0.29)
-                    ).frame(width: 350, height: 50)
-                    .overlay {
-                        if(self.contact_number.isEmpty) {
-                            HStack {
-                                Text("Contact Number")
-                                    .foregroundStyle(
-                                        Color(uiColor: UIColor(hex: "939393", alpha: 1.0)!)
-                                    ).bold()
-                                Spacer()
-                            }.padding(.leading)
-                        }
-                    }
-            }.padding(.top, 15)
+        TextField(text: self.$contact_number) {
+            Text("Contact Number")
+                .foregroundStyle(
+                    Color(uiColor: UIColor(hex: "939393", alpha: 1.0)!)
+                ).bold()
+        }.frame(width: 350, height: 50)
+        .padding(.leading, 21)
+        .background {
+            RoundedRectangle(cornerRadius: 40)
+                .fill(
+                    Color(red: 0.63, green: 0.63, blue: 0.63).opacity(0.29)
+                ).frame(width: 350, height: 50)
+        }.padding(.top, 15)
+        .foregroundStyle(.white)
         
         /*
             DOB field
          */
+
         
-        TextField("", text: self.$dob)
+        TextField("", text: self.$dobStr)
             .frame(width: 350, height: 50)
+            .disabled(true)
+            .padding(.leading)
+            .foregroundStyle(.white)
             .background {
                 RoundedRectangle(cornerRadius: 40)
                     .fill(
                         Color(red: 0.63, green: 0.63, blue: 0.63).opacity(0.29)
                     ).frame(width: 350, height: 50)
                     .overlay {
-                        if(self.dob.isEmpty) {
+                        if(self.dobStr.isEmpty) {
                             HStack {
                                 Text("Date of birth")
                                     .foregroundStyle(
                                         Color(uiColor: UIColor(hex: "939393", alpha: 1.0)!)
                                     ).bold()
                                 Spacer()
+                                
                                 Image(.DOB)
                                     .padding(.trailing, 24)
+                                    .id(self.calendarID)
+                                    .overlay {
+                                        DatePicker("", selection: self.$dob)
+                                            .blendMode(.destinationOver)
+                                            .onChange(of: self.dob) { () in
+                                                let dateFormatter = DateFormatter()
+                                                dateFormatter.dateFormat = "dd/MM/YYYY"
+                                                self.calendarID += 1
+                                                self.dobStr = dateFormatter.string(from: self.dob)
+                                            }
+                                    }
+
+                                
                             }.padding(.leading)
                         }
                     }
@@ -115,84 +124,75 @@ struct SignUpFields : View {
             Referral code field
          */
         
-        TextField("", text: self.$referral_code)
-            .frame(width: 350, height: 50)
-            .background {
-                RoundedRectangle(cornerRadius: 40)
-                    .fill(
-                        Color(red: 0.63, green: 0.63, blue: 0.63).opacity(0.29)
-                    ).frame(width: 350, height: 50)
-                    .overlay {
-                        if(self.referral_code.isEmpty) {
-                            HStack {
-                                Text("Referral code")
-                                    .foregroundStyle(
-                                        Color(uiColor: UIColor(hex: "939393", alpha: 1.0)!)
-                                    ).bold()
-                                Spacer()
-                            }.padding(.leading)
-                        }
-                    }
-            }.padding(.top, 15)
+        TextField(text: self.$referral_code) {
+            Text("Referral code")
+                .foregroundStyle(
+                    Color(uiColor: UIColor(hex: "939393", alpha: 1.0)!)
+                ).bold()
+        }.frame(width: 350, height: 50)
+        .padding(.leading, 21)
+        .background {
+            RoundedRectangle(cornerRadius: 40)
+                .fill(
+                    Color(red: 0.63, green: 0.63, blue: 0.63).opacity(0.29)
+                ).frame(width: 350, height: 50)
+        }.padding(.top, 15)
+        .foregroundStyle(.white)
         
         /*
             Password field
          */
         
-        TextField("", text: self.$password)
-            .frame(width: 350, height: 50)
-            .background {
-                RoundedRectangle(cornerRadius: 40)
-                    .fill(
-                        Color(red: 0.63, green: 0.63, blue: 0.63).opacity(0.29)
-                    ).frame(width: 350, height: 50)
-                    .overlay {
-                        if(self.password.isEmpty) {
-                            HStack {
-                                Text("Password")
-                                    .foregroundStyle(
-                                        Color(uiColor: UIColor(hex: "939393", alpha: 1.0)!)
-                                    ).bold()
-                                Spacer()
-                            }.padding(.leading)
-                        }
-                    }
-            }.padding(.top, 15)
+        TextField(text: self.$password) {
+            Text("Password")
+                .foregroundStyle(
+                    Color(uiColor: UIColor(hex: "939393", alpha: 1.0)!)
+                ).bold()
+        }.frame(width: 350, height: 50)
+        .padding(.leading, 21)
+        .background {
+            RoundedRectangle(cornerRadius: 40)
+                .fill(
+                    Color(red: 0.63, green: 0.63, blue: 0.63).opacity(0.29)
+                ).frame(width: 350, height: 50)
+        }.padding(.top, 15)
+        .foregroundStyle(.white)
         
         /*
             Re-Enter Password field
          */
         
-        TextField("", text: self.$re_password)
-            .frame(width: 350, height: 50)
-            .background {
-                RoundedRectangle(cornerRadius: 40)
-                    .fill(
-                        Color(red: 0.63, green: 0.63, blue: 0.63).opacity(0.29)
-                    ).frame(width: 350, height: 50)
-                    .overlay {
-                        if(self.re_password.isEmpty) {
-                            HStack {
-                                Text("Confirm Password")
-                                    .foregroundStyle(
-                                        Color(uiColor: UIColor(hex: "939393", alpha: 1.0)!)
-                                    ).bold()
-                                Spacer()
-                            }.padding(.leading)
-                        }
-                    }
-            }.padding(.top, 15)
+        TextField(text: self.$re_password) {
+            Text("Confirm Password")
+                .foregroundStyle(
+                    Color(uiColor: UIColor(hex: "939393", alpha: 1.0)!)
+                ).bold()
+        }.frame(width: 350, height: 50)
+        .padding(.leading, 21)
+        .background {
+            RoundedRectangle(cornerRadius: 40)
+                .fill(
+                    Color(red: 0.63, green: 0.63, blue: 0.63).opacity(0.29)
+                ).frame(width: 350, height: 50)
+        }.padding(.top, 15)
+        .foregroundStyle(.white)
     }
 }
 
 
 struct SignUpAcceptTermsAndConditions : View {
+    @State var selected: Bool = false
+    
     var body: some View {
         HStack {
             Spacer()
             Circle()
-                .fill(Color(uiColor: UIColor(hex: "A0A0A0", alpha: 0.30)!))
+                .fill(Color(uiColor: UIColor(hex: self.selected ? "FF7D05" : "A0A0A0",
+                     alpha: self.selected ? 1.0 : 0.30)!))
                 .frame(width: 30, height: 30)
+                .onTapGesture {
+                    self.selected.toggle()
+                }
             HStack(spacing: 0) {
                 Text("I accept the ")
                     .foregroundStyle(Color(uiColor: UIColor(hex: "FFBD82", alpha: 1.0)!))
@@ -230,7 +230,7 @@ struct SignUpView: View {
                 Text("Register")
                     .bold()
                     .foregroundStyle(Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!))
-                    .font(.system(size: 35))
+                    .font(.custom("cabin", size: 35))
                     .padding(.top, 40)
                 
                 SignUpFields()

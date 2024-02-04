@@ -182,7 +182,7 @@ struct CaloriesView: View {
             VStack {
                 Text("Calories")
                     .foregroundStyle(Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!))
-                    .font(.system(size: 40))
+                    .font(.custom("cabin", size: 40))
                     .padding(.top, 15)
                 
                 CaloriesProgressCircle(

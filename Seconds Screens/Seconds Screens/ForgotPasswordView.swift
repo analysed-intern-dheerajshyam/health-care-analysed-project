@@ -11,25 +11,20 @@ struct ForgotPasswordFields : View {
             Email field.
          */
         
-        TextField("", text: self.$email)
-            .frame(width: 350, height: 50)
-            .background {
-                RoundedRectangle(cornerRadius: 40)
-                    .fill(
-                        Color(red: 0.63, green: 0.63, blue: 0.63).opacity(0.29)
-                    ).frame(width: 350, height: 50)
-                    .overlay {
-                        if(self.email.isEmpty) {
-                            HStack {
-                                Text("Enter Email")
-                                    .foregroundStyle(
-                                        Color(uiColor: UIColor(hex: "939393", alpha: 1.0)!)
-                                    ).bold()
-                                Spacer()
-                            }.padding(.leading)
-                        }
-                    }
-            }.padding(.top, 40)
+        TextField(text: self.$email) {
+            Text("Enter Email")
+                .foregroundStyle(
+                    Color(uiColor: UIColor(hex: "939393", alpha: 1.0)!)
+                ).bold()
+        }.frame(width: 350, height: 50)
+        .padding(.leading, 21)
+        .background {
+            RoundedRectangle(cornerRadius: 40)
+                .fill(
+                    Color(red: 0.63, green: 0.63, blue: 0.63).opacity(0.29)
+                ).frame(width: 350, height: 50)
+        }.padding(.top, 40)
+        .foregroundStyle(.white)
     }
 }
 
