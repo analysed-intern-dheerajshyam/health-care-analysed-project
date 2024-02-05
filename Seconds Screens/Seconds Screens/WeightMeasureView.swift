@@ -1,5 +1,22 @@
 import SwiftUI
 
+struct WeightSubmission : View {
+    var body: some View {
+        RoundedRectangle(cornerRadius: 15)
+            .fill(Color(uiColor: UIColor(hex: "D9D9D9", alpha: 1.0)!))
+            .frame(width: 350, height: 48)
+            .overlay {
+                HStack {
+                    Image(.kgStone)
+                        .resizable()
+                        .frame(width: 24, height: 28)
+                    Text("Submit Weight (Kg/lbs)")
+                        .font(.custom("cabin", size: 21))
+                }
+            }
+    }
+}
+
 struct WeightMeasureView: View {
     @State var sliderValue: CGFloat = 45.0
     
@@ -90,57 +107,10 @@ struct WeightMeasureView: View {
                             Text("Activity Reports")
                                 .font(.custom("cabin", size: 21))
                             
-                            RoundedRectangle(cornerRadius: 15)
-                                .fill(Color(uiColor: UIColor(hex: "D9D9D9", alpha: 1.0)!))
-                                .frame(width: 350, height: 48)
-                                .overlay {
-                                    HStack {
-                                        Image(.kgStone)
-                                            .resizable()
-                                            .frame(width: 24, height: 28)
-                                        Text("Submit Weight (Kg/lbs)")
-                                            .font(.custom("cabin", size: 21))
-                                    }
-                                }
-                            
-                            RoundedRectangle(cornerRadius: 15)
-                                .fill(Color(uiColor: UIColor(hex: "D9D9D9", alpha: 1.0)!))
-                                .frame(width: 350, height: 48)
-                                .overlay {
-                                    HStack {
-                                        Image(.kgStone)
-                                            .resizable()
-                                            .frame(width: 24, height: 28)
-                                        Text("Submit Weight (Kg/lbs)")
-                                            .font(.custom("cabin", size: 21))
-                                    }
-                                }
-                            
-                            RoundedRectangle(cornerRadius: 15)
-                                .fill(Color(uiColor: UIColor(hex: "D9D9D9", alpha: 1.0)!))
-                                .frame(width: 350, height: 48)
-                                .overlay {
-                                    HStack {
-                                        Image(.kgStone)
-                                            .resizable()
-                                            .frame(width: 24, height: 28)
-                                        Text("Submit Weight (Kg/lbs)")
-                                            .font(.custom("cabin", size: 21))
-                                    }
-                                }
-                            
-                            RoundedRectangle(cornerRadius: 15)
-                                .fill(Color(uiColor: UIColor(hex: "D9D9D9", alpha: 1.0)!))
-                                .frame(width: 350, height: 48)
-                                .overlay {
-                                    HStack {
-                                        Image(.kgStone)
-                                            .resizable()
-                                            .frame(width: 24, height: 28)
-                                        Text("Submit Weight (Kg/lbs)")
-                                            .font(.custom("cabin", size: 21))
-                                    }
-                                }
+                            WeightSubmission()
+                            WeightSubmission()
+                            WeightSubmission()
+                            WeightSubmission()
                             
                             Spacer()
                         }.padding(.top, 60)
