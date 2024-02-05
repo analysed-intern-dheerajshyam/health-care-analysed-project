@@ -27,6 +27,7 @@
 		307D5F572B6DF2F300CFD0CD /* CaloriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D5F562B6DF2F300CFD0CD /* CaloriesView.swift */; };
 		307D5F592B6E046700CFD0CD /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D5F582B6E046700CFD0CD /* MessagesView.swift */; };
 		30E3CAEE2B7111D100F28761 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E3CAED2B7111D100F28761 /* LandingView.swift */; };
+		30E3CAF02B71173700F28761 /* WeightMeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E3CAEF2B71173700F28761 /* WeightMeasureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		307D5F562B6DF2F300CFD0CD /* CaloriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesView.swift; sourceTree = "<group>"; };
 		307D5F582B6E046700CFD0CD /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		30E3CAED2B7111D100F28761 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		30E3CAEF2B71173700F28761 /* WeightMeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightMeasureView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				305983D52B6E07B40007501C /* Seconds-Screens-Info.plist */,
 				30574D552B6F3056006983D6 /* ResultsView.swift */,
 				303AC9212B5FDA8E0052E5F1 /* Dependencies.swift */,
+				30E3CAEF2B71173700F28761 /* WeightMeasureView.swift */,
 				30574D532B6F26C5006983D6 /* PickWorkoutView.swift */,
 				305983D82B6E14940007501C /* UserDetailsView.swift */,
 				305983D62B6E0B230007501C /* ProfileView.swift */,
@@ -190,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				307D5F572B6DF2F300CFD0CD /* CaloriesView.swift in Sources */,
+				30E3CAF02B71173700F28761 /* WeightMeasureView.swift in Sources */,
 				307D5F552B6D39F500CFD0CD /* HomeView.swift in Sources */,
 				303AC9222B5FDA8E0052E5F1 /* Dependencies.swift in Sources */,
 				30574D542B6F26C5006983D6 /* PickWorkoutView.swift in Sources */,
