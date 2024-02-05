@@ -26,6 +26,7 @@
 		307D5F552B6D39F500CFD0CD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D5F542B6D39F500CFD0CD /* HomeView.swift */; };
 		307D5F572B6DF2F300CFD0CD /* CaloriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D5F562B6DF2F300CFD0CD /* CaloriesView.swift */; };
 		307D5F592B6E046700CFD0CD /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D5F582B6E046700CFD0CD /* MessagesView.swift */; };
+		30E3CAEE2B7111D100F28761 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E3CAED2B7111D100F28761 /* LandingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		307D5F542B6D39F500CFD0CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		307D5F562B6DF2F300CFD0CD /* CaloriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesView.swift; sourceTree = "<group>"; };
 		307D5F582B6E046700CFD0CD /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		30E3CAED2B7111D100F28761 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				303AC9272B5FF4810052E5F1 /* ForgotPasswordView.swift */,
 				303AC9232B5FECFC0052E5F1 /* RegisterView.swift */,
 				303AC91F2B5FD99C0052E5F1 /* SignInView.swift */,
+				30E3CAED2B7111D100F28761 /* LandingView.swift */,
 				303AC9132B5FD9440052E5F1 /* ContentView.swift */,
 				303AC9112B5FD9440052E5F1 /* Seconds_ScreensApp.swift */,
 				305983D22B6E074D0007501C /* cabin.ttf */,
@@ -190,6 +193,7 @@
 				307D5F552B6D39F500CFD0CD /* HomeView.swift in Sources */,
 				303AC9222B5FDA8E0052E5F1 /* Dependencies.swift in Sources */,
 				30574D542B6F26C5006983D6 /* PickWorkoutView.swift in Sources */,
+				30E3CAEE2B7111D100F28761 /* LandingView.swift in Sources */,
 				303AC9282B5FF4810052E5F1 /* ForgotPasswordView.swift in Sources */,
 				305983D72B6E0B230007501C /* ProfileView.swift in Sources */,
 				303AC92A2B5FF5310052E5F1 /* EnterCodeView.swift in Sources */,
