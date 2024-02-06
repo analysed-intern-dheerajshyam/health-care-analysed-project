@@ -15,13 +15,15 @@ struct CaloriesProgressCircle : View {
     var body: some View {
         ZStack {
             Circle()
-                .stroke(lineWidth: 15)
-                .frame(width: 150, height: 150)
-                .opacity(0.20)
-                .foregroundColor(.gray)
+            .stroke(lineWidth: 12)
+            .frame(width: 150, height: 150)
+            .opacity(0.20)
+            .foregroundColor(.gray)
             
             Circle()
-            .stroke(style: StrokeStyle(lineWidth: 15, lineCap: .round, lineJoin: .round))
+                .trim(from: 0.0, to: 1.0) // Can be used to show progress. Keep changing (to: Double) parameter for progress.
+            .rotation(.degrees(180))
+            .stroke(style: StrokeStyle(lineWidth: 12, lineCap: .round, lineJoin: .round))
             .frame(width: 150, height: 150)
             .foregroundColor(self.color)
             
@@ -33,6 +35,8 @@ struct CaloriesProgressCircle : View {
                 
                 Text(self.unit)
                     .bold()
+                    .padding(.leading)
+                    .padding(.trailing)
                     .foregroundStyle(Color(uiColor: UIColor(hex: "FFBD82", alpha: 1.0)!))
                     .font(.system(size: 20))
             }
@@ -174,6 +178,87 @@ struct MealInfoPad : View {
     }
 }
 
+struct CaloriesCategory : View {
+    let total: Int
+    let unit: String
+    
+    var body: some View {
+        VStack {
+            
+            Text(self.unit)
+                .foregroundStyle(Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!))
+                .font(.custom("cabin", size: 40))
+                .padding(.top, 15)
+            
+            CaloriesProgressCircle(
+                color: Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!),
+                count: self.total, unit: self.unit)
+            
+            CaloriesTotalCount(totalCaloriesCount: self.total)
+        }
+    }
+}
+
+struct CateogryCarousel : View {
+    @State var categories: [AnyView] = [
+        AnyView(CaloriesCategory(total: 0, unit: "Calories")),
+        AnyView(CaloriesCategory(total: 0, unit: "Protiens")),
+        AnyView(CaloriesCategory(total: 0, unit: "Carbohyrates")),
+        AnyView(CaloriesCategory(total: 0, unit: "Fats"))
+    ]
+    
+    @State var index: Int = 0
+    
+    var body: some View {
+        HStack {
+            Circle()
+                .fill(Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!))
+                .frame(width: 63, height: 33)
+                .overlay {
+                    HStack {
+                        Spacer()
+                        Image(systemName: "chevron.left")
+                            .resizable()
+                            .bold()
+                            .foregroundStyle(.white)
+                            .frame(width: 12, height: 12)
+                            .onTapGesture {
+                                let min = (self.index == 0)
+                                if(!min) {
+                                    self.index = self.index - 1
+                                }
+                            }
+                        Spacer()
+                    }
+                }.padding(.trailing)
+            
+            self.categories[self.index]
+            
+            Circle()
+                .fill(Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!))
+                .frame(width: 63, height: 33)
+                .overlay {
+                    HStack {
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .resizable()
+                            .bold()
+                            .foregroundStyle(.white)
+                            .frame(width: 12, height: 12)
+                            .onTapGesture {
+                                let max = (self.index == (self.categories.count - 1))
+                                if(!max) {
+                                    self.index += 1
+                                }
+                                
+                            }
+                        Spacer()
+                    }
+                }.padding(.leading)
+        }
+    }
+}
+
 struct CaloriesView: View {
     
     let totalCaloriesCount: Int
@@ -185,16 +270,7 @@ struct CaloriesView: View {
     var body: some View {
         GeometryReader { geo in
             VStack {
-                Text("Calories")
-                    .foregroundStyle(Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!))
-                    .font(.custom("cabin", size: 40))
-                    .padding(.top, 15)
-                
-                CaloriesProgressCircle(
-                    color: Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!),
-                        count: self.totalCaloriesCount, unit: "Calories")
-                
-                CaloriesTotalCount(totalCaloriesCount: self.totalCaloriesCount)
+                CateogryCarousel()
                 
                 ScrollView {
                     VStack {
