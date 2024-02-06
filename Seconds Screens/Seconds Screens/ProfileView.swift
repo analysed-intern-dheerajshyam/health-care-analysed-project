@@ -116,6 +116,12 @@ struct ProfileMenuOptions: View {
             width: 20,
             height: 20
         ),
+        ProfileMenuItem(
+            imageName: "power",
+            itemName: "Logout",
+            width: 20,
+            height: 20
+        )
     ]
     
     var body: some View {
