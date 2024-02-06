@@ -27,6 +27,14 @@
 		307D5F572B6DF2F300CFD0CD /* CaloriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D5F562B6DF2F300CFD0CD /* CaloriesView.swift */; };
 		307D5F592B6E046700CFD0CD /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D5F582B6E046700CFD0CD /* MessagesView.swift */; };
 		30E3CAEE2B7111D100F28761 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E3CAED2B7111D100F28761 /* LandingView.swift */; };
+		5808E7E62B715E6000B56465 /* BodyScanPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5808E7E52B715E6000B56465 /* BodyScanPage.swift */; };
+		5808E7E82B71600E00B56465 /* ViewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5808E7E72B71600E00B56465 /* ViewResult.swift */; };
+		58E8292C2B71F5DF00F9F38D /* CameraScreenRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E8292B2B71F5DF00F9F38D /* CameraScreenRecord.swift */; };
+		58E8292E2B720CA600F9F38D /* DetailsAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E8292D2B720CA600F9F38D /* DetailsAnalysis.swift */; };
+		58E829302B720CFE00F9F38D /* DetailsAnalysis2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E8292F2B720CFE00F9F38D /* DetailsAnalysis2.swift */; };
+		58E829322B720D6C00F9F38D /* CustomizedExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E829312B720D6C00F9F38D /* CustomizedExperience.swift */; };
+		58E829342B720DF600F9F38D /* RequestSent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E829332B720DF600F9F38D /* RequestSent.swift */; };
+		58E829362B720E6700F9F38D /* Nutrientsbreakdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E829352B720E6700F9F38D /* Nutrientsbreakdown.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +60,14 @@
 		307D5F562B6DF2F300CFD0CD /* CaloriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesView.swift; sourceTree = "<group>"; };
 		307D5F582B6E046700CFD0CD /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		30E3CAED2B7111D100F28761 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		5808E7E52B715E6000B56465 /* BodyScanPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyScanPage.swift; sourceTree = "<group>"; };
+		5808E7E72B71600E00B56465 /* ViewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewResult.swift; sourceTree = "<group>"; };
+		58E8292B2B71F5DF00F9F38D /* CameraScreenRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScreenRecord.swift; sourceTree = "<group>"; };
+		58E8292D2B720CA600F9F38D /* DetailsAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAnalysis.swift; sourceTree = "<group>"; };
+		58E8292F2B720CFE00F9F38D /* DetailsAnalysis2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAnalysis2.swift; sourceTree = "<group>"; };
+		58E829312B720D6C00F9F38D /* CustomizedExperience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedExperience.swift; sourceTree = "<group>"; };
+		58E829332B720DF600F9F38D /* RequestSent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSent.swift; sourceTree = "<group>"; };
+		58E829352B720E6700F9F38D /* Nutrientsbreakdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrientsbreakdown.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +117,14 @@
 				30E3CAED2B7111D100F28761 /* LandingView.swift */,
 				303AC9132B5FD9440052E5F1 /* ContentView.swift */,
 				303AC9112B5FD9440052E5F1 /* Seconds_ScreensApp.swift */,
+				5808E7E52B715E6000B56465 /* BodyScanPage.swift */,
+				5808E7E72B71600E00B56465 /* ViewResult.swift */,
+				58E8292B2B71F5DF00F9F38D /* CameraScreenRecord.swift */,
+				58E8292D2B720CA600F9F38D /* DetailsAnalysis.swift */,
+				58E8292F2B720CFE00F9F38D /* DetailsAnalysis2.swift */,
+				58E829312B720D6C00F9F38D /* CustomizedExperience.swift */,
+				58E829332B720DF600F9F38D /* RequestSent.swift */,
+				58E829352B720E6700F9F38D /* Nutrientsbreakdown.swift */,
 				305983D22B6E074D0007501C /* cabin.ttf */,
 				305983D12B6E07440007501C /* cabin_italic.ttf */,
 				303AC9152B5FD9450052E5F1 /* Assets.xcassets */,
@@ -193,17 +217,25 @@
 				307D5F552B6D39F500CFD0CD /* HomeView.swift in Sources */,
 				303AC9222B5FDA8E0052E5F1 /* Dependencies.swift in Sources */,
 				30574D542B6F26C5006983D6 /* PickWorkoutView.swift in Sources */,
+				58E829362B720E6700F9F38D /* Nutrientsbreakdown.swift in Sources */,
 				30E3CAEE2B7111D100F28761 /* LandingView.swift in Sources */,
 				303AC9282B5FF4810052E5F1 /* ForgotPasswordView.swift in Sources */,
+				58E829302B720CFE00F9F38D /* DetailsAnalysis2.swift in Sources */,
 				305983D72B6E0B230007501C /* ProfileView.swift in Sources */,
 				303AC92A2B5FF5310052E5F1 /* EnterCodeView.swift in Sources */,
 				303AC9242B5FECFC0052E5F1 /* RegisterView.swift in Sources */,
 				303AC9202B5FD99C0052E5F1 /* SignInView.swift in Sources */,
+				58E829342B720DF600F9F38D /* RequestSent.swift in Sources */,
 				305983D92B6E14940007501C /* UserDetailsView.swift in Sources */,
+				5808E7E62B715E6000B56465 /* BodyScanPage.swift in Sources */,
 				307D5F592B6E046700CFD0CD /* MessagesView.swift in Sources */,
+				5808E7E82B71600E00B56465 /* ViewResult.swift in Sources */,
 				303AC9262B5FF2540052E5F1 /* ResetPasswordView.swift in Sources */,
+				58E829322B720D6C00F9F38D /* CustomizedExperience.swift in Sources */,
 				303AC9142B5FD9440052E5F1 /* ContentView.swift in Sources */,
+				58E8292C2B71F5DF00F9F38D /* CameraScreenRecord.swift in Sources */,
 				30574D562B6F3056006983D6 /* ResultsView.swift in Sources */,
+				58E8292E2B720CA600F9F38D /* DetailsAnalysis.swift in Sources */,
 				303AC9122B5FD9440052E5F1 /* Seconds_ScreensApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
