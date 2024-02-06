@@ -62,7 +62,7 @@ struct CaloriesTotalCount : View {
 
 struct MealNamePad : View {
     let mealName: String
-    let isLast: Bool
+    let isOpened: Bool
     
     var body: some View {
         RoundedRectangle(cornerRadius: 15)
@@ -81,24 +81,22 @@ struct MealNamePad : View {
                     
                     Spacer()
                     
-                    if(isLast) {
-                        Circle()
-                            .stroke(lineWidth: 4)
-                            .foregroundStyle(Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!))
-                            .frame(width: 36, height: 36)
-                            .padding(.top)
-                            .padding(.trailing)
-                            .overlay {
-                                HStack {
-                                    Spacer()
-                                    Image(systemName: "plus")
-                                        .foregroundStyle(Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!))
-                                    Spacer()
-                                }.padding(.top)
-                                    .padding(.trailing)
-                                    .bold()
-                            }
-                    }
+                    Circle()
+                        .stroke(lineWidth: 4)
+                        .foregroundStyle(Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!))
+                        .frame(width: 36, height: 36)
+                        .padding(.top)
+                        .padding(.trailing)
+                        .overlay {
+                            HStack {
+                                Spacer()
+                                Image(systemName: !self.isOpened ? "plus" : "minus")
+                                    .foregroundStyle(Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!))
+                                Spacer()
+                            }.padding(.top)
+                                .padding(.trailing)
+                                .bold()
+                        }
                 }
             }
     }
@@ -154,17 +152,24 @@ struct AddItemsToMealButton : View {
 
 struct MealInfoPad : View {
     let meal: Meal
-    let isLast: Bool
+    
+    @State var dropDown: Bool = false
     
     var body: some View {
         VStack {
-            MealNamePad(mealName: self.meal.name, isLast: self.isLast)
+            MealNamePad(mealName: self.meal.name, isOpened: self.dropDown)
+                .onTapGesture {
+                    self.dropDown.toggle()
+                }
             
-            if(!self.meal.details.isEmpty) {
-                MealDetails(details: self.meal.details)
-            } else {
+            if(self.dropDown) {
+                if(!self.meal.details.isEmpty) {
+                    MealDetails(details: self.meal.details)
+                }
+                
                 AddItemsToMealButton(mealName: self.meal.name)
             }
+            
         }
     }
 }
@@ -194,10 +199,7 @@ struct CaloriesView: View {
                 ScrollView {
                     VStack {
                         ForEach(0..<self.meals.count, id: \.self) { index in
-                            MealInfoPad(
-                                meal: self.meals[index],
-                                isLast: (index == (self.meals.count - 1)
-                            ))
+                            MealInfoPad(meal: self.meals[index])
                         }
                     }.onAppear {
                         

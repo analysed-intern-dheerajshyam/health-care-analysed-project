@@ -28,6 +28,7 @@
 		307D5F592B6E046700CFD0CD /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D5F582B6E046700CFD0CD /* MessagesView.swift */; };
 		30E3CAEE2B7111D100F28761 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E3CAED2B7111D100F28761 /* LandingView.swift */; };
 		30E3CAF02B71173700F28761 /* WeightMeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E3CAEF2B71173700F28761 /* WeightMeasureView.swift */; };
+		30E3CAF22B714A8300F28761 /* WorkoutLiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E3CAF12B714A8300F28761 /* WorkoutLiveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		307D5F582B6E046700CFD0CD /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		30E3CAED2B7111D100F28761 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		30E3CAEF2B71173700F28761 /* WeightMeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightMeasureView.swift; sourceTree = "<group>"; };
+		30E3CAF12B714A8300F28761 /* WorkoutLiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLiveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				305983D52B6E07B40007501C /* Seconds-Screens-Info.plist */,
 				30574D552B6F3056006983D6 /* ResultsView.swift */,
 				303AC9212B5FDA8E0052E5F1 /* Dependencies.swift */,
+				30E3CAF12B714A8300F28761 /* WorkoutLiveView.swift */,
 				30E3CAEF2B71173700F28761 /* WeightMeasureView.swift */,
 				30574D532B6F26C5006983D6 /* PickWorkoutView.swift */,
 				305983D82B6E14940007501C /* UserDetailsView.swift */,
@@ -208,6 +211,7 @@
 				303AC9262B5FF2540052E5F1 /* ResetPasswordView.swift in Sources */,
 				303AC9142B5FD9440052E5F1 /* ContentView.swift in Sources */,
 				30574D562B6F3056006983D6 /* ResultsView.swift in Sources */,
+				30E3CAF22B714A8300F28761 /* WorkoutLiveView.swift in Sources */,
 				303AC9122B5FD9440052E5F1 /* Seconds_ScreensApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

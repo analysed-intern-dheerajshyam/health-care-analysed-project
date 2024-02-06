@@ -57,8 +57,6 @@ struct WeightMeasureView: View {
                     .tint(Color(uiColor: UIColor(hex: "FF7D05", alpha: 1.0)!))
                     .padding()
                 
-//                arrow.down.circle
-                
                 HStack(spacing: 80) {
                     VStack {
                         Image(systemName: "arrow.down.circle")
