@@ -29,6 +29,7 @@
 		30E3CAEE2B7111D100F28761 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E3CAED2B7111D100F28761 /* LandingView.swift */; };
 		5808E7E62B715E6000B56465 /* BodyScanPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5808E7E52B715E6000B56465 /* BodyScanPage.swift */; };
 		5808E7E82B71600E00B56465 /* ViewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5808E7E72B71600E00B56465 /* ViewResult.swift */; };
+		58B9E4FC2B75041300296FA4 /* MeasuringHeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B9E4FB2B75041300296FA4 /* MeasuringHeartRate.swift */; };
 		58E8292C2B71F5DF00F9F38D /* CameraScreenRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E8292B2B71F5DF00F9F38D /* CameraScreenRecord.swift */; };
 		58E8292E2B720CA600F9F38D /* DetailsAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E8292D2B720CA600F9F38D /* DetailsAnalysis.swift */; };
 		58E829302B720CFE00F9F38D /* DetailsAnalysis2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E8292F2B720CFE00F9F38D /* DetailsAnalysis2.swift */; };
@@ -63,6 +64,7 @@
 		30E3CAED2B7111D100F28761 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		5808E7E52B715E6000B56465 /* BodyScanPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyScanPage.swift; sourceTree = "<group>"; };
 		5808E7E72B71600E00B56465 /* ViewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewResult.swift; sourceTree = "<group>"; };
+		58B9E4FB2B75041300296FA4 /* MeasuringHeartRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasuringHeartRate.swift; sourceTree = "<group>"; };
 		58E8292B2B71F5DF00F9F38D /* CameraScreenRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScreenRecord.swift; sourceTree = "<group>"; };
 		58E8292D2B720CA600F9F38D /* DetailsAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAnalysis.swift; sourceTree = "<group>"; };
 		58E8292F2B720CFE00F9F38D /* DetailsAnalysis2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAnalysis2.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				58E8292B2B71F5DF00F9F38D /* CameraScreenRecord.swift */,
 				58E8292D2B720CA600F9F38D /* DetailsAnalysis.swift */,
 				58E829372B72A9B000F9F38D /* VO2Page.swift */,
+				58B9E4FB2B75041300296FA4 /* MeasuringHeartRate.swift */,
 				58E8292F2B720CFE00F9F38D /* DetailsAnalysis2.swift */,
 				58E829312B720D6C00F9F38D /* CustomizedExperience.swift */,
 				58E829332B720DF600F9F38D /* RequestSent.swift */,
@@ -236,6 +239,7 @@
 				5808E7E82B71600E00B56465 /* ViewResult.swift in Sources */,
 				303AC9262B5FF2540052E5F1 /* ResetPasswordView.swift in Sources */,
 				58E829322B720D6C00F9F38D /* CustomizedExperience.swift in Sources */,
+				58B9E4FC2B75041300296FA4 /* MeasuringHeartRate.swift in Sources */,
 				303AC9142B5FD9440052E5F1 /* ContentView.swift in Sources */,
 				58E8292C2B71F5DF00F9F38D /* CameraScreenRecord.swift in Sources */,
 				30574D562B6F3056006983D6 /* ResultsView.swift in Sources */,
